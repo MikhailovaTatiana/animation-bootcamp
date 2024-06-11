@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1rem;
+}
+
+.btn:hover {
+    background-color: red;
+    padding: .7rem 1.2rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
