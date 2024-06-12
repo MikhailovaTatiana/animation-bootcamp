@@ -8,32 +8,32 @@
 </head>
     <body>
         <nav>
-            <a href="#">
+            <a href="#" onclick="showDesc(1)">
                 <aside>01</aside>
                 <article>
                     <h3>Home</h3>
-                    <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <p class="desc" id="desc1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
                 </article>
             </a>
-            <a href="#">
+            <a href="#" onclick="showDesc(2)">
                 <aside>02</aside>
                 <article>
                     <h3>What we do</h3>
-                    <p class="desc">Sunt saepe vel mollitia, ab maxime fugit temporibus, fuga reprehenderit id quisquam nostrum eveniet, esse.</p>
+                    <p class="desc" id="desc2">Sunt saepe vel mollitia, ab maxime fugit temporibus, fuga reprehenderit id quisquam nostrum eveniet, esse.</p>
                 </article>
             </a>
-            <a href="#">
+            <a href="#" onclick="showDesc(3)">
                 <aside>03</aside>
                 <article>
                     <h3>Who we are</h3>
-                    <p class="desc">Nobis magnam beatae quibusdam sapiente quisquam libero tenetur alias corrupti aliquid? Optio tenetur obcaecati doloribus beatae.</p>
+                    <p class="desc" id="desc3">Nobis magnam beatae quibusdam sapiente quisquam libero tenetur alias corrupti aliquid? Optio tenetur obcaecati doloribus beatae.</p>
                 </article>
             </a>
-            <a href="#">
+            <a href="#" onclick="showDesc(4)">
                 <aside>04</aside>
                 <article>
                     <h3>Contact</h3>
-                    <p class="desc">Nulla numquam, animi dolorum atque expedita odio aliquam quidem officiis? Molestias voluptatum quasi debitis.</p>
+                    <p class="desc" id="desc4">Nulla numquam, animi dolorum atque expedita odio aliquam quidem officiis? Molestias voluptatum quasi debitis.</p>
                 </article>
             </a>
         </nav>
@@ -44,9 +44,12 @@
         </div>
         <script>
             document.querySelector('.toggle')
-            .addEventListener('click', (e) => {
-                    document.querySelector('nav').classList.toggle('open')
-            })
+                .addEventListener('click', (e) => {
+                    document.querySelector('nav').classList.toggle('open');
+            });
+            function showDesc(n) {
+                document.getElementById("desc" + n).classList.toggle('show');  
+            }    
         </script>
     </body>
 </html>

@@ -15,23 +15,17 @@ nav {
     background-color: black;
     font-family: "Roboto", sans-serif;
     padding: 4rem 1rem;
+    display: none;
+}
+
+nav.open { 
+    display: block;
 }
 
 a {
     color: white;
     text-decoration: none;
     display: flex;
-}
-
-aside,
-p {
-    color: rgb(167, 167, 167);
-    font-size: small;
-    padding: .2rem 1rem 1rem 0;
-} 
-
-nav.open { 
-    display: none;
 }
 
 a.toggle {
@@ -42,6 +36,21 @@ a.toggle {
     height: 2rem;
     border-radius: 50px;
     background-color: rgb(223, 83, 82);
+}
+
+aside,
+p {
+    color: rgb(167, 167, 167);
+    font-size: small;
+    padding: .2rem 1rem 1rem 0;    
+}
+
+p {
+    display: none;
+}
+
+p.show {
+    display: block;
 }
 
 .instruction {
