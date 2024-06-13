@@ -90,5 +90,5 @@ section:hover {
     position: absolute;
     transition: all 0.3s ease;
     transform-origin: center bottom;
-    box-shadow: rgb(130, 128, 128);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
