@@ -1,0 +1,94 @@
+:root {
+    --bg-color-0: rgb(238,238,238);
+    --bg-color-1: rgb(255, 7, 8);
+    --bg-color-2: rgb(253, 146, 25);
+    --bg-color-3: rgb(250, 250, 48);
+    --bg-color-4: rgb(85, 255, 65);
+    --bg-color-5: rgb(55,207,136);
+    --bg-color-6: rgb(93, 235, 253);
+    --bg-color-7: rgb(106, 116, 252);
+    --bg-color-8: rgb(199, 119, 245);
+    --bg-color-9: rgb(243, 179, 210);
+}
+
+body {
+    background-color: var(--bg-color-0);
+    margin: 0;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    .card:nth-child(1){
+        background-color: var(--bg-color-1);
+    }
+    .card:nth-child(2){
+        background-color: var(--bg-color-2);
+    }
+    .card:nth-child(3){
+        background-color: var(--bg-color-3);
+    }
+    .card:nth-child(4){
+        background-color: var(--bg-color-4);
+    }
+    .card:nth-child(5){
+        background-color: var(--bg-color-5);
+    }
+    .card:nth-child(6){
+        background-color: var(--bg-color-6);
+    }
+    .card:nth-child(7){
+        background-color: var(--bg-color-7);
+    }
+    .card:nth-child(8){
+        background-color: var(--bg-color-8);
+    }
+    .card:nth-child(9){
+        background-color: var(--bg-color-9);
+    }
+}
+
+section:hover {
+    .card:nth-of-type(1){
+        transform: translateX(2rem) rotateZ(40deg);
+    }
+    .card:nth-of-type(2){
+        transform: translateX(1.5rem) rotateZ(30deg);
+    }
+    .card:nth-of-type(3){
+        transform: translateX(1rem) rotateZ(20deg);
+    }
+    .card:nth-of-type(4){
+        transform: translateX(0.5rem) rotateZ(10deg);
+    }
+    /* .card:nth-of-type(5){
+        transform: translateX(0) rotateZ(0);
+    } */
+    .card:nth-of-type(6){
+        transform: translateX(-0.5rem) rotateZ(-10deg);
+    }
+    .card:nth-of-type(7){
+        transform: translateX(-1rem) rotateZ(-20deg);
+    }
+    .card:nth-of-type(8){
+        transform: translateX(-1.5rem) rotateZ(-30deg);
+    }
+    .card:nth-of-type(9){
+        transform: translateX(-2rem) rotateZ(-40deg);
+    }
+}
+
+.card {
+    width: 12rem;
+    height: 17rem;
+    background-color: aqua;
+    border-radius: 4px;
+    position: absolute;
+    transition: all 0.3s ease;
+    transform-origin: center bottom;
+    box-shadow: rgb(130, 128, 128);
+}
