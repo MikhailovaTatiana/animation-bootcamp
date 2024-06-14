@@ -20,15 +20,15 @@ main {
     position: relative;   
 }
 
-.ms {
+.m {
     height: 120px;
     width: 3px;
     background-color: red;
     position: absolute;
     left: 148.5px;
     bottom: 150px;
-    transform: rotate(30deg);
     transform-origin: center bottom;
+    animation: sec 60s linear infinite;
 }
 
 .s {
@@ -39,6 +39,8 @@ main {
     left: 147.5px;
     bottom: 150px;
     z-index: 1;
+    transform-origin: center bottom;
+    animation: min 3600s linear infinite;
 }
 
 .dot {
@@ -49,4 +51,22 @@ main {
     position: absolute;
     left: 145px;
     top: 145px;
+}
+
+@keyframes sec {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes min {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
