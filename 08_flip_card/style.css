@@ -41,7 +41,7 @@ article {
 
 @keyframes back-jump {
     25% {
-        margin-bottom: 50vh;
+        margin-bottom: 10rem;
     }
     50% {
         transform: rotateY(180deg);
@@ -50,7 +50,7 @@ article {
 
 @keyframes front-jump {
     25% {
-        margin-bottom: 50vh;
+        margin-bottom: 10rem;
     }
     50% {
         transform: rotateY(0);
