@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 5s linear 2;
+}
+
+aside {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.side-1 {
+    background-color: rgb(252, 90, 68, .6);
+    transform: translateZ(125px);
+}
+
+.side-2 {
+    background-color: rgb(252, 129, 75, .6);
+    transform: rotateY(90deg) translateZ(125px);
+} 
+
+.side-3 {
+    background-color: rgb(252, 130, 163, .6);
+    transform: rotateY(180deg) translateZ(125px);
+}
+
+.side-4 {
+    background-color: rgb(190, 130, 192, .6);
+    transform: rotateX(90deg) translateZ(125px);
+}
+
+.side-5 {
+    background-color: rgb(90, 130, 234, .6);
+    transform: rotateY(-90deg) translateZ(125px);
+}
+
+.side-6 {
+    background-color: rgb(151, 91, 197, .6);
+    transform: rotateX(-90deg) translateZ(125px) rotate(180deg);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
+    } 
+}
